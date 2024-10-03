@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUCORSA - Transporte Público de Córdoba</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            font-size: 24px;
+        }
+        nav {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        nav ul li {
+            margin-bottom: 10px;
+        }
+        nav ul li a {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 15px 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        nav ul li a:hover, nav ul li a:focus {
+            background-color: #45a049;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        .search-container {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .search-container label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .search-container input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .search-container button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .search-container button:hover, .search-container button:focus {
+            background-color: #45a049;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        .info-section {
+            margin-top: 20px;
+        }
+        .info-section h2 {
+            font-size: 22px;
+            color: #4CAF50;
+        }
+        .info-section p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AUCORSA - Transporte Público de Córdoba</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#" role="button">Inicio</a></li>
+            <li><a href="#" role="button">Rutas y Horarios</a></li>
+            <li><a href="#" role="button">Tarifas</a></li>
+            <li><a href="#" role="button">Contacto y Ayuda</a></li>
+        </ul>
+    </nav>
+    
+    <div class="search-container">
+        <label for="bus-search">Buscar mi autobús:</label>
+        <input type="text" id="bus-search" placeholder="Introduzca el número de línea">
+        <button>Buscar</button>
+    </div>
+    
+    <div class="info-section">
+        <h2>Información Importante</h2>
+        <p>Horario de atención telefónica: Lunes a Viernes de 9:00 a 14:00</p>
+        <p>Teléfono de atención al cliente: 957 76 00 00</p>
+    </div>
+    
+    <div class="info-section">
+        <h2>Novedades</h2>
+        <p>Nueva tarjeta para mayores de 65 años con descuentos especiales. Infórmese en nuestras oficinas.</p>
+    </div>
+</body>
+</html>
