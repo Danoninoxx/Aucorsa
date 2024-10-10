@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>AUCORSA - Transporte Público de Córdoba</title>
     <style>
         body {
@@ -57,6 +58,9 @@
             border-radius: 5px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
+        }
+        nav ul li a i {
+            margin-right: 8px;
         }
 
         nav ul li a:hover, nav ul li a:focus {
@@ -129,20 +133,21 @@
         <h1>AUCORSA - Transporte Público de Córdoba</h1>
     </header>
     
-    <nav>
-        <ul>
-            <li><a href="#" role="button">Inicio</a></li>
-            <li><a href="#" role="button">Rutas y Horarios</a></li>
-            <li><a href="#" role="button">Tarifas</a></li>
-            <li><a href="#" role="button">Contacto y Ayuda</a></li>
-        </ul>
-    </nav>
-    
     <div class="search-container">
         <label for="bus-search">Buscar mi autobús:</label>
         <input type="text" id="bus-search" placeholder="Introduzca el número de línea">
         <button>Buscar</button>
     </div>
+
+    <nav>
+        <ul>
+            <li><a href="#" role="button"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="#" role="button"><i class="fas fa-clock"></i> Rutas y Horarios</a></li>
+            <li><a href="#" role="button"><i class="fas fa-ticket-alt"></i> Tarifas</a></li>
+            <li><a href="#" role="button"><i class="fas fa-phone"></i> Contacto y Ayuda</a></li>
+        </ul>
+    </nav>
+    
     
     <div class="info-section">
         <h2>Información Importante</h2>
