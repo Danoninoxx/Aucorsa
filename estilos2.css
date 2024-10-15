@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     line-height: 1.8;
     color: #333;
     max-width: 800px;
@@ -8,14 +8,21 @@ body {
     background-color: #ffffff;
 }
 header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #4CAF50;
     padding: 1em;
     font-size: 24px;
 }
+header img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
 nav {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     padding: 20px;
     margin-top: 20px;
     text-align: center;
@@ -32,47 +39,22 @@ nav ul li {
 }
 nav ul li a {
     display: block;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #ffffff;
+    color: #4CAF50;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 30px;
     padding: 15px 20px;
+    border: 2px solid #4CAF50;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
+nav ul li a i {
+    margin-right: 8px;
+}
 nav ul li a:hover, nav ul li a:focus {
-    background-color: #45a049;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-}
-.search-container {
     background-color: #f0f0f0;
-    padding: 20px;
-    margin-top: 20px;
-}
-.search-container label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-.search-container input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-.search-container button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.search-container button:hover, .search-container button:focus {
-    background-color: #45a049;
+    color: #4CAF50;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 .info-section {
@@ -84,4 +66,24 @@ nav ul li a:hover, nav ul li a:focus {
 }
 .info-section p {
     font-size: 18px;
+    color: #333;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .gallery-image {
+        max-width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header img {
+        margin: 0 auto 10px auto;
+    }
 }
