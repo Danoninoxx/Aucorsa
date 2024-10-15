@@ -7,6 +7,73 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Rutas y Horarios - AUCORSA</title>
     <link rel="stylesheet" href="estilos2.css">
+    <style>
+        .line-categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+            gap: 20px;
+        }
+        .category {
+            flex: 1;
+            min-width: 220px;
+            background-color: #f0f0f0;
+            padding: 15px;
+            border: 2px solid #4CAF50;
+            border-radius: 8px;
+        }
+        .category h3 {
+            color: #4CAF50;
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .line-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .line-box {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border: 2px solid #4CAF50;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .line-box:hover {
+            transform: scale(1.05);
+        }
+        .line-icon {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #4CAF50;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        .line-icon a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .line-info {
+            font-size: 18px;
+            line-height: 1.4;
+            flex: 1;
+        }
+        .line-info a {
+            text-decoration: none;
+            color: inherit;
+}
+    </style>
 </head>
 <body>
     <header>
@@ -16,17 +83,57 @@
 
     <nav>
         <ul>
-            <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
-            <li><a href="rutas-horarios.html"><i class="fas fa-clock"></i> Rutas y Horarios</a></li>
+            <li><a href="index2.html"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="rutas.html"><i class="fas fa-clock"></i> Rutas y Horarios</a></li>
             <li><a href="tarifas.html"><i class="fas fa-ticket-alt"></i> Tarifas</a></li>
-            <li><a href="contacto-ayuda.html"><i class="fas fa-phone"></i> Contacto y Ayuda</a></li>
+            <li><a href="contacto.html"><i class="fas fa-phone"></i> Contacto y Ayuda</a></li>
         </ul>
     </nav>
 
-    <div class="info-section">
-        <h2>Información de Rutas y Horarios</h2>
-        <p>Consulta las rutas y horarios de nuestros autobuses para planificar tu viaje de manera eficiente. Puedes descargar los horarios detallados y ver las rutas disponibles en cada línea.</p>
-        <p><a href="#">Descargar horarios en PDF</a></p>
+    <div class="line-categories">
+        <div class="category">
+            <h3>Urbanas</h3>
+            <ul class="line-list">
+                <li class="line-box"><div class="line-icon" style="background-color: #2E7D32;"><a href="linea1.html">1</div><div class="line-info">Fátima - Tendillas</div></a></li>
+                <li class="line-box"><div class="line-icon" style="background-color: #1565C0;">5</div><div class="line-info">C. Sanitaria - RENFE - Valdeolleros</div></li>
+                <li class="line-box"><div class="line-icon" style="background-color: #AD1457;">9</div><div class="line-info">Figueroa - Tejares - Sector Sur</div></li>
+                <li class="line-box"><div class="line-icon" style="background-color: #6D4C41;">13</div><div class="line-info">Colón - U. Patriarca</div></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h3>Periféricas</h3>
+            <ul class="line-list">
+                <li class="line-box"><div class="line-icon" style="background-color: #D32F2F;">2</div><div class="line-info">Fátima - Tejares - C. Sanitaria</div></li>
+                <li class="line-box"><div class="line-icon" style="background-color: #0288D1;">6</div><div class="line-info">Levante - Tejares - B. Guadalquivir</div></li>
+                <li class="line-box"><div class="line-icon" style="background-color: #FBC02D;">10</div><div class="line-info">RENFE - H. Los Morales</div></li>
+                <li class="line-box"><div class="line-icon" style="background-color: #8D6E63;">14</div><div class="line-info">Fidiana - Sector Sur - C. Sanitaria</div></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h3>Polígonos</h3>
+            <ul class="line-list">
+                <li class="line-box"><div class="line-icon" style="background-color: #7B1FA2;">3</div><div class="line-info">Albaida - RENFE - Fuensanta</div></li>
+                <li class="line-box"><div class="line-icon" style="background-color: #EF6C00;">7</div><div class="line-info">Cañero - Ciudad Jardín - Zoco</div></li>
+                <li class="line-box"><div class="line-icon" style="background-color: #1976D2;">11</div><div class="line-info">RENFE - Sansueña</div></li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h3>Servicios Especiales</h3>
+            <ul class="line-list">
+                <li class="line-box"><div class="line-icon" style="background-color: #E91E63;">4</div><div class="line-info">Fidiana - RENFE - Miralbaida</div></li>
+                <li class="line-box"><div class="line-icon" style="background-color: #FDD835;">8</div><div class="line-info">Valdeolleros - Colón - Palmeras</div></li>
+                <li class="line-box"><div class="line-icon" style="background-color: #4CAF50;">12</div><div class="line-info">Naranjo - Tendillas - Sector Sur</div></li>
+                <li class="line-box"><div class="line-icon" style="background-color: #FF5722;">C2</div><div class="line-info">Tendillas - Padres de Gracia</div></li>
+                <li class="line-box"><div class="line-icon" style="background-color: #9E9E9E;">46</div><div class="line-info">Colón Norte - Huerta del Hierro</div></li>
+            </ul>
+        </div>
     </div>
+
+    <footer>
+        <p>© 2024 AUCORSA - Transporte Público de Córdoba. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
